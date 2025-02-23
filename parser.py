@@ -23,7 +23,7 @@ while True:
             if flag: newLine = 'socks4://' + line + '\n'
             else: newLine = line + '\n'
             file.write(newLine)
-        print("Your file is ready (proxies.txt)")
+        print("Your file is ready (example.txt)")
         break
     elif choice == 'socks5':
         response = requests.get('https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt')
@@ -31,7 +31,7 @@ while True:
             if flag: newLine = 'socks5://' + line + '\n'
             else: newLine = line + '\n'
             file.write(newLine)
-        print("Your file is ready (proxies.txt)")
+        print("Your file is ready (example.txt)")
         break
     elif choice == 'http':
         response = requests.get('https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt')
@@ -39,7 +39,7 @@ while True:
             if flag: newLine = 'http://' + line + '\n'
             else: newLine = line + '\n'
             file.write(newLine)
-        print("Your file is ready (proxies.txt)")
+        print("Your file is ready (example.txt)")
         break
     else:
         print("Try again")
